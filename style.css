@@ -30,7 +30,7 @@ li {
   list-style: none;
 }
 
-h1 {
+h2 {
   font-weight: var(--fw-500);
   color: var(--secondary-color);
   font-size: 16px;
@@ -68,6 +68,8 @@ h1 {
 
 .social-media-icons {
   display: flex;
+  gap: 50;
+  width: 50%;
 }
 
 .social-icon {
