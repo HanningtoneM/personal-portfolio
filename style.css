@@ -1,11 +1,6 @@
 :root {
-  /* colors */
-
   --primary-color: #172b4d;
   --secondary-color: #7f8cff;
-
-  /* fonts sizes */
-
   --fw-400: 400;
   --fw-500: 500;
   --fw-600: 600;
@@ -19,7 +14,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  text-decoration: none;
 }
 
 a {
@@ -30,7 +24,12 @@ li {
   list-style: none;
 }
 
-h2 {
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.connect {
   font-weight: var(--fw-500);
   color: var(--secondary-color);
   font-size: 16px;
@@ -46,30 +45,42 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 16px;
-  background:
-    url("./image/header-shapes-mobile.png") no-repeat center
-    center/cover;
 }
 
 .nav_bar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .title {
+  font-weight: bold;
   font-size: 40px;
-  font-weight: var(--fw-700);
   line-height: 52px;
+  color: #172b4d;
+}
+
+.text-port {
+  margin: 8px 0;
 }
 
 .portfolio_presentation {
-  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 7.125rem 1.5rem;
+  background-image: url(./image/header-shapes-mobile.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+  border-bottom-left-radius: 90px;
 }
 
 .social-media-icons {
   display: flex;
-  gap: 50;
-  width: 50%;
+  gap: 12px;
+  width: 127px;
+  margin-top: 12px;
 }
 
 .social-icon {
