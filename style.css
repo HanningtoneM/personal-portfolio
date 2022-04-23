@@ -209,7 +209,8 @@ main .project {
   padding: 10px;
   margin: 20px 0 0 0;
   border: 1px solid #396df2;
-  color: #396df2;
+  color: #3268f1;
+  background-color: white;
   border-radius: 5px;
 }
 
