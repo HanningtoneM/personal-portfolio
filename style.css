@@ -173,6 +173,17 @@ main .project {
   color: #7a869a;
 }
 
+.contact-section p {
+  color: #ebebff;
+  font-weight: 400;
+  text-align: center;
+  line-height: 28px;
+  font-size: 20px;
+  vertical-align: top;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
 .project .project-content p {
   font-size: 15px;
   font-weight: 400;
@@ -272,4 +283,44 @@ main .project {
 
 .about-skills ul li .closed img {
   transform: rotate(-90deg);
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  padding: 8em 1.5em;
+  background-image: url(image/contactshapes-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-color: #606eec;
+  border-top-left-radius: 90px;
+  background-size: contain;
+}
+
+.contact-section h2 {
+  font-weight: 700;
+  line-height: 52px;
+  font-size: 40px;
+  text-align: center;
+  color: #fffff6;
+}
+
+.contact-section form li input {
+  width: 100%;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  margin: 10px 0;
+  height: 48px;
+  padding: 0 1rem;
+}
+
+.contact-section form li textarea {
+  width: 100%;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  margin-top: 8px;
+  padding: 1rem;
+  resize: none;
 }
