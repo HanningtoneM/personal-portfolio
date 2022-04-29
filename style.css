@@ -38,10 +38,6 @@ li {
   line-height: 25px;
 }
 
-#root {
-  width: 100%;
-}
-
 body {
   background-color: #f2f2f2;
 }
@@ -141,12 +137,11 @@ main .project {
 
 .about-skills ul li ul {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 1em;
 }
 
 .about-skills ul li a {
-  width: 100%;
   padding: 1em 0;
   display: flex;
   justify-content: space-between;
@@ -157,7 +152,6 @@ main .project {
 }
 
 .about-skills ul li ul li {
-  width: 100%;
   padding: 0.5em;
   background-color: #f7f7f9;
   display: flex;
@@ -277,10 +271,6 @@ main .project {
   margin-top: 1.3em;
 }
 
-.about-section .about-skills {
-  margin-top: 3em;
-}
-
 .about-skills ul li .closed img {
   transform: rotate(-90deg);
 }
@@ -288,39 +278,263 @@ main .project {
 .contact-section {
   display: flex;
   flex-direction: column;
-  padding: 8em 1.5em;
+  background-color: #606eec;
+  align-items: center;
+  padding: 6.4375rem 1.5rem 0 1.5rem;
+  border-top-left-radius: 90px;
   background-image: url(image/contactshapes-mobile.svg);
   background-repeat: no-repeat;
   background-position: top right;
-  background-color: #606eec;
-  border-top-left-radius: 90px;
-  background-size: contain;
+  background-size: 62% 96%;
 }
 
-.contact-section h2 {
-  font-weight: 700;
-  line-height: 52px;
-  font-size: 40px;
+.contact-section .header-primary-text {
   text-align: center;
-  color: #fffff6;
+  color: #fff;
 }
 
-.contact-section form li input {
-  width: 100%;
-  border-radius: 8px;
-  background: #fff;
-  border: 1px solid #cfd8dc;
-  margin: 10px 0;
-  height: 48px;
-  padding: 0 1rem;
+.contact-section .para-primary-text {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-align: center;
+  color: #ebebff;
+  margin-bottom: 2.6875rem;
 }
 
-.contact-section form li textarea {
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
   width: 100%;
-  border-radius: 8px;
+}
+
+.contact-form label {
+  display: flex;
+  width: 100%;
+}
+
+.contact-form label input::placeholder {
+  font-size: 1.0625rem;
+  color: #172b4d;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+
+.contact-form label textarea::placeholder {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: #b3bac5;
+}
+
+.contact-form label textarea {
+  height: 10.625rem;
+}
+
+.contact-form label input,
+.contact-form label textarea {
+  width: 100%;
+  padding: 0.9375rem 2.375rem 0.9375rem 1rem;
   background: #fff;
+  color: #172b4d;
+  border-radius: 8px;
   border: 1px solid #cfd8dc;
-  margin-top: 8px;
-  padding: 1rem;
-  resize: none;
+}
+
+.contact-form div {
+  margin: 0.625rem 0 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .desktopmenu {
+    display: none;
+  }
+
+  .desk1 {
+    display: none;
+  }
+
+  .desk2 {
+    display: none;
+  }
+
+  .desk3 {
+    display: none;
+  }
+
+  .desk4 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .project .pimage {
+    display: none;
+  }
+
+  .top_header {
+    width: 100%;
+    position: fixed;
+    background-color: #fffff6;
+    padding-top: 0;
+    padding-bottom: 5px;
+  }
+
+  .logo {
+    margin-left: 150px;
+  }
+
+  .right_side {
+    display: none;
+  }
+
+  .desktopmenu {
+    color: #344563;
+    display: flex;
+    font-size: 15px;
+    line-height: 20px 89%;
+    vertical-align: center;
+    align-items: center;
+    gap: 14px;
+    font-weight: 500;
+    padding-right: 100px;
+  }
+
+  .portfolio_presentation {
+    background-image: url(image/Header2x.png);
+    padding-left: 260px;
+    background-color: #fff;
+    background-size: contain;
+  }
+
+  .title {
+    margin-top: 100px;
+    letter-spacing: 0.3px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .text-port {
+    font-size: 20px;
+    line-height: 28px;
+    align-items: left;
+    vertical-align: top;
+    height: 98px;
+  }
+
+  .connect {
+    line-height: 24px;
+    align-items: left;
+    vertical-align: top;
+    margin-right: 100px;
+    padding-top: 12px;
+  }
+
+  .social-media-icons {
+    height: 19.99px;
+    left: 260px;
+    align-items: left;
+    margin-left: 0;
+  }
+
+  .works-section {
+    align-items: center;
+  }
+
+  .project {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: center;
+    border-radius: 24px;
+    border: blue;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 2%;
+    background-color: #e5e5e5;
+  }
+
+  .project:nth-child(even) > .project-content {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  .project:nth-child(even) > .project-img {
+    grid-column-start: 2;
+  }
+
+  .about-section {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+  }
+
+  .about-text {
+    width: 60%;
+    background-color: white;
+  }
+
+  .about-text h2 {
+    font-size: 40px;
+    line-height: 52px;
+    padding-top: 0;
+  }
+
+  .about-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .about-section .connect {
+    font-size: 16px;
+    line-height: 24px;
+    height: 24px;
+    color: #7f8cff;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 100;
+  }
+
+  .about-section .social-media-icons {
+    margin-bottom: 0;
+    margin-left: 0%;
+  }
+
+  .about-skills {
+    width: 40%;
+  }
+
+  .contact-section {
+    display: flex;
+    align-items: center;
+    background-image: url(/image/contact\ formdesktop2x.png);
+    margin-top: 120px;
+    background-size: 97%;
+  }
+
+  .contact-section h2,
+  .contact-section p {
+    max-width: 550px;
+  }
+
+  .contact-form {
+    max-width: 450px;
+  }
+
+  .contact-form label input,
+  .contact-form label textarea {
+    border-radius: 0;
+    outline: none;
+  }
+
+  .contact-form div {
+    align-self: center;
+  }
 }
