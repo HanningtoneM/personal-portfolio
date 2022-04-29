@@ -32,6 +32,13 @@ li {
   transition: font-size, 5s;
 }
 
+.logo:hover {
+  background: -webkit-linear-gradient(plum, #96ceb4, #D8BFD8, tomato);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+}
+
 .connect {
   font-weight: var(--fw-500);
   color: var(--secondary-color);
