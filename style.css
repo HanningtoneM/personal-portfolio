@@ -29,6 +29,7 @@ li {
 .logo {
   font-weight: bold;
   font-size: 20px;
+  transition: font-size, 5s;
 }
 
 .connect {
