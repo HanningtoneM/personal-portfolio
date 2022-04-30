@@ -21,9 +21,9 @@
                 <img src="./image/icons/menu.svg" alt="">
             </div>
              <ul class="desktopmenu">
-                <li class="dmenu">portfolio</li>
-                <li class="dmenu">about</li>
-                <li class="dmenu">contact</li>
+                <li> <a class="dmenu" href="#">Portfolio</a></li>
+                <li> <a class="dmenu" href="#">about</a></li>
+                <li> <a class="dmenu" href="#">contact</a></li>
              </ul>
         </nav>
     </header>
@@ -168,30 +168,38 @@
                     <span>Get my resume</span>
                 </button> 
             </div> 
-                <div class="about-skills">
-                    <ul>
-                        <li>
-                            <a href="#" class="active"><span>Languages</span> <img src="image/icons/chevron-down.svg" alt="v"></a>
-                            <ul class="about-languages">
-                                <li>
-                                    <img src="image/icons/js.png" alt="Javascript">  <p>JavaScript</p>
-                                </li>
-                                <li>
-                                    <img src="image/icons/html.png" alt="html"> <p>HTML</p>
-                                </li>
-                                <li>
-                                    <img src="image/icons/css.png" alt="Javacssscript"> <p>CSS</p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#" class="closed"><span>Frameworks</span> <img src="image/icons/chevron-down.svg" alt="v"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="closed"><span>Skills</span> <img src="image/icons/chevron-down.svg" alt="v"></a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="about-list">
+                <ul class="skills">
+                    <li>
+                        <div class="skill-li">
+                            <a href="#" class="skill-name"><span>Languages</span></a>
+                                <img src="image/icons/chevron-down.svg" alt="v">
+                        </div>
+                        <ul class="language-list">
+                            <li class="language">
+                                <img class="language-img" src="image/jselipse.png" alt="javascript">
+                                <p class="language-name">JavaScript</p>
+                            </li>
+                            <li class="language">
+                                <img class="language-img" src="image/icons/html.png" alt="html">
+                                <p class="language-name">HTML</p>
+                            </li>
+                            <li class="language">
+                                <img class="language-img" src="image/icons/css.png" alt="css">
+                                <p class="language-name">CSS</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="hr skill-li">
+                        <a href="#" class="skill-name"><span>Frameworks</span></a>
+                            <img src="image/icons/chevron-down.svg" alt="v">
+                    </li>
+                    <li class="hr skill-li">
+                        <a href="#" class="skill-name"><span>Skills</span></a>
+                            <img src="image/icons/chevron-down.svg" alt="v">
+                    </li>
+                </ul>
+            </div>
             </div>    
         </section>
         <section class="contact-section">
@@ -200,7 +208,10 @@
               built or a project that
               needs
               coding. I'd love to help with it</p>
-            <form action="https://formspree.io/f/xayvlepl" class="contact-form" method="POST">
+            <form
+                action="https://formspree.io/f/xayvlepl"
+                method="POST"
+                class="contact-form">
               <label for="username">
                 <input type="text" name="username" id="username" maxlength="30" placeholder="username" required>
               </label>
@@ -213,11 +224,12 @@
                 <textarea name="message" id="message" rows="5" maxlength="500" placeholder="Write your message here!"
                   required></textarea>
               </label>
-  
-            </form>
-            <button type="button" class="button">
+              <button type="submit" class="contact-button">
                 <span>Get in touch</span>
               </button>
+  
+            </form>
+            
             <div class="bottom-line"></div>
           </section>
     </main>

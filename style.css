@@ -86,6 +86,7 @@ body {
   background-repeat: no-repeat;
   background-position: top right;
   border-bottom-left-radius: 90px;
+  height: 718px;
 }
 
 .social-media-icons {
@@ -135,37 +136,8 @@ main .project {
   align-items: center;
 }
 
-.about-skills ul li .active {
-  border: none;
-}
-
 .project .project-content .project-content-list .active {
   color: #344563;
-}
-
-.about-skills ul li ul {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-.about-skills ul li a {
-  padding: 1em 0;
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.5em;
-  font-weight: 400;
-  color: black;
-  border-bottom: 1px solid #dfe1e6;
-}
-
-.about-skills ul li ul li {
-  padding: 0.5em;
-  background-color: #f7f7f9;
-  display: flex;
-  align-items: center;
-  gap: 1em;
-  border-radius: 0.5em;
 }
 
 .project .project-content .project-content-list li {
@@ -279,8 +251,55 @@ main .project {
   margin-top: 1.3em;
 }
 
-.about-skills ul li .closed img {
-  transform: rotate(-90deg);
+.about-list {
+  margin-top: 36px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-name {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-left: 12px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.language-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.language-name {
+  margin-left: 16px;
+}
+
+.language-img {
+  margin-left: 12px;
+}
+
+.hr-skill-li {
+  border-bottom: 1px solid #dfe1e6;
 }
 
 .contact-section {
@@ -294,11 +313,14 @@ main .project {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 62% 96%;
+  height: 779px;
 }
 
 .contact-section .header-primary-text {
   text-align: center;
   color: #fff;
+  font-weight: 700 bold;
+  font-size: 40px;
 }
 
 .contact-section .para-primary-text {
@@ -350,6 +372,16 @@ main .project {
 
 .contact-form div {
   margin: 0.625rem 0 2rem 0;
+}
+
+.contact-button {
+  width: 140px;
+  padding: 10px;
+  margin: 20px 0 0 0;
+  border: 1px solid #396df2;
+  color: #3268f1;
+  background-color: white;
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {
@@ -412,6 +444,7 @@ main .project {
     padding-left: 260px;
     background-color: #fff;
     background-size: contain;
+    height: 946px;
   }
 
   .title {
@@ -515,8 +548,56 @@ main .project {
     margin-left: 0%;
   }
 
-  .about-skills {
-    width: 40%;
+  .about-list {
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 684px;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skill-li {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+
+  .skill-name {
+    color: #344563;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-left: 12px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .language-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .language {
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f9;
+    border-radius: 8px;
+    margin-right: 12px;
+    align-items: flex-start;
+    height: 120px;
+    width: 122px;
+    justify-content: space-around;
+  }
+
+  .language-name {
+    margin-left: 16px;
+  }
+
+  .hr {
+    border-bottom: 1px solid #dfe1e6;
   }
 
   .contact-section {
@@ -525,6 +606,8 @@ main .project {
     background-image: url(/image/contact\ formdesktop2x.png);
     margin-top: 120px;
     background-size: 97%;
+    width: 100%;
+    height: 846px;
   }
 
   .contact-section h2,
@@ -544,5 +627,9 @@ main .project {
 
   .contact-form div {
     align-self: center;
+  }
+
+  .contact-button {
+    margin-left: 35%;
   }
 }
