@@ -11,7 +11,7 @@ this project is the beginning of my microverse curriculum. building a mobile por
 
 ## Live Demo
 
-[Live Demo Link](https://hanningtonem.github.io/Mobile-portfolio/)
+[Live Demo Link](https://hanningtonem.github.io/personal-portfolio/)
 
 ## Getting Started
 
