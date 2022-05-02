@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #172b4d;
-  --secondary-color: #7f8cff;
+  --secondary-color: #0720f7;
   --fw-400: 400;
   --fw-500: 500;
   --fw-600: 600;
@@ -144,7 +144,7 @@ main .project {
   font-size: 13px;
   font-weight: 600;
   line-height: 13px;
-  color: #7a869a;
+  color: #474e59;
 }
 
 .contact-section p {
@@ -177,7 +177,7 @@ main .project {
 }
 
 .project .project-content .project-language li {
-  color: #6070ff;
+  color: #3b4eff;
   background-color: #ebebff;
   border-radius: 10px;
   font-size: 13px;
@@ -305,7 +305,7 @@ main .project {
 .contact-section {
   display: flex;
   flex-direction: column;
-  background-color: #606eec;
+  background-color: #3b4eff;
   align-items: center;
   padding: 6.4375rem 1.5rem 0 1.5rem;
   border-top-left-radius: 90px;
@@ -318,7 +318,7 @@ main .project {
 
 .contact-section .header-primary-text {
   text-align: center;
-  color: #fff;
+  color: #ebebff;
   font-weight: 700 bold;
   font-size: 40px;
 }
@@ -536,7 +536,7 @@ main .project {
     font-size: 16px;
     line-height: 24px;
     height: 24px;
-    color: #7f8cff;
+    color: #4b5399;
     margin-top: 30px;
     margin-bottom: 20px;
     font-style: normal;
