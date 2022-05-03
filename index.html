@@ -48,8 +48,14 @@
         <section class="works-section">
              <div class="project">
                 <div class="project-img">
-                    <img class="pimage" src="image/project-image.png" alt="Tonic project image">
-                    <img class="desk1" src="image/desktopimage1.png" alt="Nature project image">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="image/desktopimage1.png">
+                        <source media="(max-width: 767px)" srcset="image/project-image.png">
+                        <img src="image/desktopimage1.png" alt="Canopy project screenshot" />
+                    </picture>
+                    
+                   <!-- <img class="pimage" src="image/project-image.png" alt="Tonic project image">
+                    <img class="desk1" src="image/desktopimage1.png" alt="Nature project image"> -->
                 </div>
                 <div class="project-content">
                     <h3>Tonic</h3>
