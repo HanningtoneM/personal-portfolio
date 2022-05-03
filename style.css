@@ -55,7 +55,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 16px;
-  background-color: white;
+  background-color: #fff;
 }
 
 .nav_bar {
