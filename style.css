@@ -460,6 +460,7 @@ main .project {
     align-items: left;
     vertical-align: top;
     height: 98px;
+    width: 78%;
   }
 
   .connect {
