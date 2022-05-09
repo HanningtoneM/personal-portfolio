@@ -30,5 +30,3 @@ document.querySelectorAll('.dmenu').forEach((dmenu) => {
     openMenu.classList.remove('blur');
   });
 });
-
-
