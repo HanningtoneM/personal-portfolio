@@ -12,5 +12,23 @@ function show() {
   openMenu.classList.add('blur');
 }
 
+function close() {
+  mobileMenu.style.top = '-100%';
+  document.querySelector('.main').classList.remove('blur');
+  document.querySelector('.logo').classList.remove('blur');
+  openMenu.classList.remove('blur');
+}
+
 openMenu.addEventListener('click', show);
+closeMenu.addEventListener('click', close);
+
+document.querySelectorAll('.dmenu').forEach((dmenu) => {
+  dmenu.addEventListener('click', () => {
+    mobileMenu.style.display = 'none';
+    document.querySelector('.main').classList.remove('blur');
+    document.querySelector('.logo').classList.remove('blur');
+    openMenu.classList.remove('blur');
+  });
+});
+
 
