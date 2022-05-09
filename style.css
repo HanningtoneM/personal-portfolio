@@ -660,7 +660,7 @@ main .project {
   .contact-section {
     display: flex;
     align-items: center;
-    background-image: url(/image/contact\ formdesktop2x.png);
+    background-image: url(/image/contactformdesktop.png);
     margin-top: 120px;
     background-size: 97%;
     width: 100%;
