@@ -11,3 +11,6 @@ function show() {
   document.querySelector('.logo').classList.add('blur');
   openMenu.classList.add('blur');
 }
+
+openMenu.addEventListener('click', show);
+
