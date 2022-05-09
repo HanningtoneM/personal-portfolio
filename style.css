@@ -470,7 +470,30 @@ main .project {
     display: none;
   }
 
- 
+  .open-menu {
+    display: none;
+  }
+
+  .desktopmenu {
+    color: #e8eafa;
+    display: flex;
+    font-size: 15px;
+    line-height: 20px 89%;
+    vertical-align: center;
+    align-items: center;
+    gap: 14px;
+    font-weight: 500;
+    padding-right: 100px;
+    transition: 0.7s ease;
+  }
+
+  .desktopmenu:hover {
+    color: red;
+  }
+
+  .close-menu {
+    display: none;
+  }
 
   .portfolio_presentation {
     background-image: url(image/Header2x.png);
