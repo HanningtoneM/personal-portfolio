@@ -397,7 +397,6 @@ main .project {
     background-color: blue;
     opacity: 0.9;
     padding: 40px 0 0 20px;
-    transition: 0.7s ease;
   }
 
   .desktopmenu li a {
