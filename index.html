@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header class="top_header">
@@ -17,17 +18,20 @@
             <div class="left-side">
                 <a href="/" class="logo">H.Monda</a>
             </div>
-            <div class="right_side">
-                <img src="./image/icons/menu.svg" alt="hamburger icon">
+            <div class="open-menu">
+                <i class="fa fa-bars"></i>
             </div>
-             <ul class="desktopmenu">
-                <li> <a class="dmenu" href="#">Portfolio</a></li>
-                <li> <a class="dmenu" href="#">about</a></li>
-                <li> <a class="dmenu" href="#">contact</a></li>
+            <ul class="desktopmenu">
+                <li> <a class="dmenu" href="#works">Portfolio</a></li>
+                <li> <a class="dmenu" href="#about">about</a></li>
+                <li> <a class="dmenu" href="#contact">contact</a></li>
+                <li class="close-menu">
+                    <i class="fa fa-times"></i>
+                </li>
              </ul>
         </nav>
     </header>
-    <main id="root">
+    <main id="root" class="main">
            <section class="portfolio_presentation">
 
                 <h1 class="title">I’m Monda <br>
@@ -45,7 +49,7 @@
 
                     </ul>
         </section>
-        <section class="works-section">
+        <section class="works-section" id="works">
              <div class="project">
                 <div class="project-img">
                     <picture>
@@ -140,7 +144,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-section">
+        <section class="about-section" id="about">
             <div class="wrapper">
             <div class="about-text">
                 <h2>About <br>myself</h2>
@@ -203,7 +207,7 @@
             </div>
             </div>    
         </section>
-        <section class="contact-section">
+        <section class="contact-section" id="contact">
             <h2 class="header-primary-text">contact me</h2>
             <p class="para-primary-text">If you have an application you are interested in developing, a feature that you need
               built or a project that
@@ -234,5 +238,6 @@
             <div class="bottom-line"></div>
           </section>
     </main>
+    <script src="js/main.js"></script>
     </body>
     </html>

@@ -387,6 +387,49 @@ main .project {
 @media (max-width: 768px) {
   .desktopmenu {
     display: none;
+    position: fixed;
+    flex-direction: column;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    background-color: blue;
+    opacity: 0.9;
+    padding: 40px 0 0 20px;
+    transition: 0.7s ease;
+  }
+
+  .desktopmenu li a {
+    display: inline-block;
+    padding: 4px;
+    font-size: 34px;
+    color: white;
+    font-weight: var(--fw-600);
+    margin: 10px 0 0;
+  }
+
+  .open-menu {
+    display: block;
+    top: 50px;
+    right: 20px;
+    color: #6070ff;
+    margin-right: 5px;
+    font-size: 20px;
+  }
+
+  .close-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 1.5rem;
+    font-weight: var(--fw-400);
+    color: white;
+  }
+
+  .blur {
+    filter: blur(4.5px);
   }
 
   .desk1 {
@@ -427,8 +470,12 @@ main .project {
     display: none;
   }
 
+  .open-menu {
+    display: none;
+  }
+
   .desktopmenu {
-    color: #344563;
+    color: #e8eafa;
     display: flex;
     font-size: 15px;
     line-height: 20px 89%;
@@ -437,6 +484,15 @@ main .project {
     gap: 14px;
     font-weight: 500;
     padding-right: 100px;
+    transition: 0.7s ease;
+  }
+
+  .desktopmenu:hover {
+    color: red;
+  }
+
+  .close-menu {
+    display: none;
   }
 
   .portfolio_presentation {
@@ -604,7 +660,7 @@ main .project {
   .contact-section {
     display: flex;
     align-items: center;
-    background-image: url(/image/contact\ formdesktop2x.png);
+    background-image: url(image/contact-desktopbackground.svg);
     margin-top: 120px;
     background-size: 97%;
     width: 100%;

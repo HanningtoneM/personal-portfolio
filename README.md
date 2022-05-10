@@ -36,9 +36,11 @@ To get a local copy up and running:
 
 Template from this [Figma](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1) by [Microverse](https://bit.ly/MicroverseTN)
 
-## Contributing
+## Contributers
 
-Contributions, issues, and feature requests are welcome!
+👤 **Gbenga Oyewunmi**
+
+- Github: [@kelomo2502](https://github.com/kelomo2502)
 
 ## Show your support
 
