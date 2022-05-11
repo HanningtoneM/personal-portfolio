@@ -13,7 +13,8 @@
   transition: opacity 0.5s ease-in-out;
   backdrop-filter: blur(2px);
 }
-.multipost-modal- .multipost-modal .technologies From hannningtone pompie to Everyone 12:02 PM .multipost-contents .network svg .tonic-modal-container.show {
+
+.tonic-modal-container.show {
   opacity: 1;
   pointer-events: auto;
 }
@@ -65,6 +66,7 @@
   margin: 10px 0;
   opacity: 0.8;
 }
+
 .tonic-modal .technologies ul li {
   font-style: normal;
   font-weight: 500;
@@ -101,49 +103,41 @@
   align-items: center;
   padding: 8px;
 }
-.multipost-contents .network svg .tonic-modal-container.show {
-  From hannningtone pompie to Everyone 12:04 PM .tonic-modal .technologies ul li {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
 
-    .tonic-contents .network svg {
-      width: 20px;
-      height: 20px;
-      color: #6070ff;
-    }
+.tonic-contents .network svg {
+  width: 20px;
+  height: 20px;
+  color: #6070ff;
+}
 
-    .tonic-contents .network i {
-      color: #6070ff;
-    }
+.tonic-contents .network i {
+  color: #6070ff;
+}
 
-    .tonic-contents .network a span {
-      color: #6070ff;
-      margin-right: 6px;
-      font-size: 12px;
-    }
+.tonic-contents .network a span {
+  color: #6070ff;
+  margin-right: 6px;
+  font-size: 12px;
+}
 
-    .tonic-modal button:hover {
-      opacity: 1;
-    }
+.tonic-modal button:hover {
+  opacity: 1;
+}
 
-    /* Media Queries for Desktop Screen - All scrren sizes within the range of 992px and below. */
+/* Media Queries for Desktop Screen - All scrren sizes within the range of 992px and below. */
 
-    @media (max-width: 768px) {
-      .tonic-modal {
-        width: 80%;
-        max-width: 90%;
-        padding: 30px 20px;
-      }
+@media (max-width: 768px) {
+  .tonic-modal {
+    width: 80%;
+    max-width: 90%;
+    padding: 30px 20px;
+  }
 
-      .tonic-modal h1 {
-        font-size: 24px;
-      }
+  .tonic-modal h1 {
+    font-size: 24px;
+  }
 
-      .tonic-stacks ul li {
-        font-size: 10px;
-      }
-    }
-
-
+  .tonic-stacks ul li {
+    font-size: 10px;
+  }
+}
