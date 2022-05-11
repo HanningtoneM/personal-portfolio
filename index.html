@@ -480,32 +480,33 @@
               built or a project that
               needs
               coding. I'd love to help with it</p>
-            <form
-                action="https://formspree.io/f/xayvlepl"
-                method="POST"
-                class="contact-form">
-              <label for="username">
-                <input type="text" name="username" id="username" maxlength="30" placeholder="username" required>
-              </label>
-      
-              <label for="email">
-                <input type="email" name="email" id="email" placeholder="example@mail.com" required>
-              </label>
-      
-              <label for="message">
-                <textarea name="message" id="message" rows="5" maxlength="500" placeholder="Write your message here!"
-                  required></textarea>
-              </label>
-              <button type="submit" class="contact-button">
-                <span>Get in touch</span>
-              </button>
-  
-            </form>
-            
+              <form action="https://formspree.io/f/xayvlepl" method="POST" class="contact-form">
+                <input
+                class="form-input"
+                  type="text"
+                  name="user_name"
+                  placeholder="Name"
+                  required
+                  maxlength="30"
+                />
+                <input type="email" name="user_email" placeholder="Email" required  class="form-input"/>
+                <textarea
+                class="form-input"
+                  name="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Write your message here"
+                  required
+                  maxlength="500"
+                ></textarea>
+                <div class="form-submission-error"></div>
+                <button class="contact-button" type="submit">Get In Touch</button>
+              </form>         
             <div class="bottom-line"></div>
           </section>
     </main>
     <script src="js/main.js"></script>
     <script src="js/data.js"></script>
+    <script src="js/validation.js"></script>
     </body>
     </html>

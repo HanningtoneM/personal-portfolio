@@ -388,86 +388,16 @@ button {
   border-bottom: 1px solid #dfe1e6;
 }
 
-.contact-section {
-  display: flex;
-  flex-direction: column;
-  background-color: #3b4eff;
-  align-items: center;
-  padding: 6.4375rem 1.5rem 0 1.5rem;
-  border-top-left-radius: 90px;
-  background-image: url(image/contactshapes-mobile.svg);
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 62% 96%;
-  height: 779px;
+/* contact */
+.form-submission-error {
+  margin: 10px 0;
 }
 
-.contact-section .header-primary-text {
-  text-align: center;
-  color: #ebebff;
-  font-weight: 700 bold;
-  font-size: 40px;
-}
-
-.contact-section .para-primary-text {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  text-align: center;
-  color: #ebebff;
-  margin-bottom: 2.6875rem;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  width: 100%;
-}
-
-.contact-form label {
-  display: flex;
-  width: 100%;
-}
-
-.contact-form label input::placeholder {
-  font-size: 1.0625rem;
-  color: #172b4d;
-  line-height: 1.25rem;
-  font-weight: 400;
-}
-
-.contact-form label textarea::placeholder {
-  font-size: 0.9375rem;
-  font-weight: 400;
-  color: #b3bac5;
-}
-
-.contact-form label textarea {
-  height: 10.625rem;
-}
-
-.contact-form label input,
-.contact-form label textarea {
-  width: 100%;
-  padding: 0.9375rem 2.375rem 0.9375rem 1rem;
-  background: #fff;
-  color: #172b4d;
-  border-radius: 8px;
-  border: 1px solid #cfd8dc;
-}
-
-.contact-form div {
-  margin: 0.625rem 0 2rem 0;
-}
-
-.contact-button {
-  width: 140px;
-  padding: 10px;
-  margin: 20px 0 0 0;
-  border: 1px solid #396df2;
-  color: #3268f1;
-  background-color: white;
-  border-radius: 5px;
+.error {
+  color: #e9bbba;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
@@ -812,37 +742,7 @@ button {
   .hr {
     border-bottom: 1px solid #dfe1e6;
   }
+  
 
-  .contact-section {
-    display: flex;
-    align-items: center;
-    background-image: url(image/contact-desktopbackground.svg);
-    margin-top: 120px;
-    background-size: 97%;
-    width: 100%;
-    height: 846px;
-  }
 
-  .contact-section h2,
-  .contact-section p {
-    max-width: 550px;
-  }
-
-  .contact-form {
-    max-width: 450px;
-  }
-
-  .contact-form label input,
-  .contact-form label textarea {
-    border-radius: 0;
-    outline: none;
-  }
-
-  .contact-form div {
-    align-self: center;
-  }
-
-  .contact-button {
-    margin-left: 35%;
-  }
 }
