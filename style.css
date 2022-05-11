@@ -401,7 +401,6 @@ button {
   background-position: top right;
   background-size: 62% 96%;
   height: 779px;
-
 }
 
 footer .footer-info h3 {
@@ -443,6 +442,43 @@ textarea {
   font-size: 16px;
   letter-spacing: 1px;
   font-weight: 500;
+}
+
+.contact-button {
+  width: 162px;
+  height: 48px;
+  background-color: #fff;
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 12px 0;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
+  text-align: center;
+}
+
+/* Hover */
+.contact-button:hover {
+  background: #6070ff;
+  color: #fff;
+  box-shadow: 1px 6px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
+}
+
+/* Focused */
+.contact-button:focus {
+  background: #2230d2;
+  color: #fff;
+  box-shadow: 1px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Disabled */
+.contact-button:disabled {
+  background: #e5e5e5;
+  color: #5e6c84;
+  border: 1px solid #c1c7d0;
 }
 
 @media (max-width: 768px) {
@@ -788,6 +824,59 @@ textarea {
     border-bottom: 1px solid #dfe1e6;
   }
 
+  .footer-section {
+    display: flex;
+    align-items: center;
+    background-image: url(image/contact-desktopbackground.svg);
+    margin-top: 120px;
+    background-size: 97%;
+    width: 100%;
+    height: 846px;
+  }
 
+  footer {
+    width: 801px;
+    margin: auto;
+    text-align: center;
+  }
 
+  .footer-info {
+    width: 569px;
+    margin: auto;
+  }
+
+  .contact-button {
+    margin-top: 0;
+  }
+
+  footer form input,
+  textarea {
+    width: 447px;
+    margin: 27px auto;
+    border-radius: 2px;
+  }
+
+  /* Animations And Transitions */
+  button {
+    transition: background-color 2s;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #396df2;
+  }
+
+  .footer-info-text {
+    transition: transform 3s;
+  }
+
+  .footer-info-text:hover {
+    transform: translate(25px);
+  }
+
+  .right-block img:hover {
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    transform: scale(1.04);
+  }
 }
