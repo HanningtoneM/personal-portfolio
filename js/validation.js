@@ -28,3 +28,16 @@ form.addEventListener('submit', (event) => {
     showMessage(message, false);
   }
 });
+
+function populateLocalStorage() {
+  form.addEventListener('input', () => {
+    // add information in the local storage
+    const userData = {
+      name: nameField.value,
+      emailAddress: emailAddressField.value,
+      message: messageField.value,
+    };
+    // store information in the local storage
+    localStorage.setItem('userData', JSON.stringify(userData));
+  });
+}
