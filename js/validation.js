@@ -41,3 +41,16 @@ function populateLocalStorage() {
     localStorage.setItem('userData', JSON.stringify(userData));
   });
 }
+
+function getDataFromLocalStorage() {
+  const userDataFromLocalStorage = JSON.parse(localStorage.getItem('userData'));
+
+  // displaying information from the local storage
+  nameField.value = userDataFromLocalStorage.name;
+  emailAddressField.value = userDataFromLocalStorage.emailAddress;
+  messageField.value = userDataFromLocalStorage.message;
+  
+}
+
+populateLocalStorage();
+getDataFromLocalStorage();
