@@ -56,6 +56,7 @@ body {
   justify-content: space-between;
   padding: 20px 16px;
   background-color: #fff;
+  width: 100%;
 }
 
 .nav_bar {
