@@ -28,3 +28,32 @@ form.addEventListener('submit', (event) => {
     showMessage(message, false);
   }
 });
+
+const nameField = document.querySelector('#user-name');
+const emailAddressField = document.querySelector('#user-email');
+const messageField = document.querySelector('#user-message');
+
+function populateLocalStorage() {
+  form.addEventListener('input', () => {
+    // add information in the local storage
+    const userData = {
+      name: nameField.value,
+      emailAddress: emailAddressField.value,
+      message: messageField.value,
+    };
+    // store information in the local storage
+    localStorage.setItem('userData', JSON.stringify(userData));
+  });
+}
+
+function getDataFromLocalStorage() {
+  const userDataFromLocalStorage = JSON.parse(localStorage.getItem('userData'));
+
+  // displaying information from the local storage
+  nameField.value = userDataFromLocalStorage.name;
+  emailAddressField.value = userDataFromLocalStorage.emailAddress;
+  messageField.value = userDataFromLocalStorage.message;
+}
+
+populateLocalStorage();
+getDataFromLocalStorage();
