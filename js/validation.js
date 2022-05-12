@@ -29,6 +29,10 @@ form.addEventListener('submit', (event) => {
   }
 });
 
+const nameField = document.querySelector('#user-name');
+const emailAddressField = document.querySelector('#user-email');
+const messageField = document.querySelector('#user-message');
+
 function populateLocalStorage() {
   form.addEventListener('input', () => {
     // add information in the local storage
@@ -49,7 +53,6 @@ function getDataFromLocalStorage() {
   nameField.value = userDataFromLocalStorage.name;
   emailAddressField.value = userDataFromLocalStorage.emailAddress;
   messageField.value = userDataFromLocalStorage.message;
-  
 }
 
 populateLocalStorage();
