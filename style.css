@@ -56,6 +56,7 @@ body {
   justify-content: space-between;
   padding: 20px 16px;
   background-color: #fff;
+  width: 100%;
 }
 
 .nav_bar {
@@ -388,7 +389,8 @@ button {
   border-bottom: 1px solid #dfe1e6;
 }
 
-.contact-section {
+/* contact */
+.footer-section {
   display: flex;
   flex-direction: column;
   background-color: #3b4eff;
@@ -402,72 +404,82 @@ button {
   height: 779px;
 }
 
-.contact-section .header-primary-text {
-  text-align: center;
-  color: #ebebff;
-  font-weight: 700 bold;
+footer .footer-info h3 {
+  font-style: normal;
+  font-weight: bold;
   font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  text-align: center;
 }
 
-.contact-section .para-primary-text {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.footer-info-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
   text-align: center;
   color: #ebebff;
-  margin-bottom: 2.6875rem;
+  margin: 12px 0;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
+footer form input,
+textarea {
+  display: block;
+  font-family: 'Poppins', sans-serif;
   width: 100%;
-}
-
-.contact-form label {
-  display: flex;
-  width: 100%;
-}
-
-.contact-form label input::placeholder {
-  font-size: 1.0625rem;
-  color: #172b4d;
-  line-height: 1.25rem;
-  font-weight: 400;
-}
-
-.contact-form label textarea::placeholder {
-  font-size: 0.9375rem;
-  font-weight: 400;
-  color: #b3bac5;
-}
-
-.contact-form label textarea {
-  height: 10.625rem;
-}
-
-.contact-form label input,
-.contact-form label textarea {
-  width: 100%;
-  padding: 0.9375rem 2.375rem 0.9375rem 1rem;
-  background: #fff;
-  color: #172b4d;
+  margin-top: 18px;
+  border: none;
   border-radius: 8px;
-  border: 1px solid #cfd8dc;
+  padding: 15px 16px;
 }
 
-.contact-form div {
-  margin: 0.625rem 0 2rem 0;
+.form-submission-error {
+  margin: 10px 0;
+}
+
+.error {
+  color: #e9bbba;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 
 .contact-button {
-  width: 140px;
-  padding: 10px;
-  margin: 20px 0 0 0;
-  border: 1px solid #396df2;
-  color: #3268f1;
-  background-color: white;
-  border-radius: 5px;
+  width: 162px;
+  height: 48px;
+  background-color: #fff;
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 12px 0;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
+  text-align: center;
+}
+
+/* Hover */
+.contact-button:hover {
+  background: #6070ff;
+  color: #fff;
+  box-shadow: 1px 6px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
+}
+
+/* Focused */
+.contact-button:focus {
+  background: #2230d2;
+  color: #fff;
+  box-shadow: 1px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Disabled */
+.contact-button:disabled {
+  background: #e5e5e5;
+  color: #5e6c84;
+  border: 1px solid #c1c7d0;
 }
 
 @media (max-width: 768px) {
@@ -813,7 +825,7 @@ button {
     border-bottom: 1px solid #dfe1e6;
   }
 
-  .contact-section {
+  .footer-section {
     display: flex;
     align-items: center;
     background-image: url(image/contact-desktopbackground.svg);
@@ -823,26 +835,49 @@ button {
     height: 846px;
   }
 
-  .contact-section h2,
-  .contact-section p {
-    max-width: 550px;
+  footer {
+    width: 801px;
+    margin: auto;
+    text-align: center;
   }
 
-  .contact-form {
-    max-width: 450px;
-  }
-
-  .contact-form label input,
-  .contact-form label textarea {
-    border-radius: 0;
-    outline: none;
-  }
-
-  .contact-form div {
-    align-self: center;
+  .footer-info {
+    width: 569px;
+    margin: auto;
   }
 
   .contact-button {
-    margin-left: 35%;
+    margin-top: 0;
+  }
+
+  footer form input,
+  textarea {
+    width: 447px;
+    margin: 27px auto;
+    border-radius: 2px;
+  }
+
+  /* Animations And Transitions */
+  button {
+    transition: background-color 2s;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #396df2;
+  }
+
+  .footer-info-text {
+    transition: transform 3s;
+  }
+
+  .footer-info-text:hover {
+    transform: translate(25px);
+  }
+
+  .right-block img:hover {
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    transform: scale(1.04);
   }
 }
