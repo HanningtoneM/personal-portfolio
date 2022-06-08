@@ -1,12 +1,12 @@
 const projects = [
   {
     id: 1,
-    name: 'Tonic',
+    name: 'Womens summit',
     description:
-          'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis deserunt nesciunt nulla tenetur ipsam dolorum placeat natus aperiam recusandae maiores.',
-    featuredImage: 'image/desk1.png',
-    technologies: ['html', 'Ruby and rails', 'css', 'javascript'],
-    stacks: ['canopy', 'Backend Dev', '2015'],
+          'Kenya women summit responsive(mobile and desktop) website built with html,CSS and Javascript. This website tested my understanding of HTML and CSS also Javascript was used to make the mobile hamburger menu.',
+    featuredImage: 'image/womensummitdesktop.png',
+    technologies: ['html', 'css', 'javascript'],
+    stacks: ['capstone', 'Frontend Dev', '2022'],
   },
   {
     id: 2,
