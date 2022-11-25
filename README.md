@@ -8,6 +8,7 @@ this project is the beginning of my microverse curriculum. building a mobile por
 
 - HTML
 - CSS
+- JavaScript
 
 ## Live Demo
 
